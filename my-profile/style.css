@@ -1,0 +1,162 @@
+<style>
+
+body {
+	background-color: #E1AFD1;
+
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #ff6ec7; /* Rose */
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 70px; /* Utilisation de la variable font-size */
+  font-family: Didot; /* Utilisation de la variable font-family */
+  color: #7469B6; /* Utilisation de la variable color */
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+
+
+h2 {
+  color: #AD88C6;
+	font-size: 25px;
+	font-family: Optima;}
+
+h3 {
+  color: #AD88C6;
+	font-size: 30px;
+	font-family: Palatino;}
+
+p {
+  color: #7469B6;
+	font-size: 16px;
+	font-family: Semplicita;}
+
+a {
+	text-decoration: none;}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+li {
+	color: #7469B6;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+container {
+  width: 700px; 
+  margin: 40px auto; 
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+	background-color: #FFE6E6;
+	border-radius: 10px;
+	width: 800px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+	padding: 40px;
+	margin: 50px auto;
+	text-align: center;
+	transition: squale(1,1)
+}
+
+
+
+.btn-blue {
+	background-color: #E1AFD1;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 5px;
+	align-items: center;
+}
+
+.btn-blue:hover {
+	background-color: #7469B6;
+	color: white;
+}
+
+.card-white:hover {
+  transform: scale(1.1);
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.list-inline li { 
+	display: inline;
+	padding: 10px;
+}
+
+.google-map {
+    width: 400px; 
+    height: 300px; 
+}
+
+</style>
